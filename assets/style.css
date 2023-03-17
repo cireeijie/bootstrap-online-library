@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus, input:focus {
+    outline: none;
+}
+
+.side-bar {
+    background-color: white;
+    height: 82px;
+}
+
+.logo {
+    height: 82px;
+}
+
+.book-logo {
+    background-color: #198754;
+    color: white;
+}
+
+.top-bar {
+    background-color: white;
+    z-index: 99999;
+}
+
+.sent-to {
+    font-size: 14px;
+    color: #6F6F85;
+}
+
+.sent-to i {
+    font-size: 10px;
+}
+
+.search-bar form {
+    background-color: #F5F4FF;
+}
+
+.search-bar form i {
+    color: #6F6F85;
+}
+
+.search-bar form input {
+    background-color: transparent;
+    border: none;
+}
+
+.user-section i {
+    color: #6F6F85;
+}
+
+.user-section .user .fa-chevron-down {
+    font-size: 10px;
+}
+
+.robin {
+    background: url(img/robin.png);
+    background-size: cover;
+    border-radius: 10px;
+    height: 100%;
+    padding: 40px 20px;
+}
+
+.felix {
+    background: url(img/felix.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.aileen {
+    background: url(img/aileen.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.action-btns .add-cart,
+.action-btns .heart {
+    padding: 6px 10px;
+    margin-left: 5px;
+    border: 1px solid #198754;
+    border-radius: 10px;
+}
+
+.quote {
+    background-color: rgba(255, 255, 255, 0.76);
+    padding: 20px;
+}
+
+.book-card img {
+    width: 100%;
+    height: 342px;
+    border-radius: 10px;
+}
+
+.checkout-container {
+    height: auto;
+    overflow: hidden;
+}
+.credit-card {
+    height: 200px;
+}
+
+.credit-card .card-number {
+    font-size: 20px;
+}
+
+.credit-card .info .small-text {
+    font-size: 8px;
+}
+
+.checkout-form .inputs input {
+    border: 1px solid rgba(0, 0, 0, 0.212);
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.checkout-form .inputs .name,
+.checkout-form .inputs .cv {
+    margin-right: 2px;
+}
+
+.visa-icon {
+    font-size: 40px;
+}
+
+.summary-column {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+}
+
+.info img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.info .desc,
+.info .price {
+    font-size: 12px;
+}
+
+@media (max-width: 1400px) {
+    .container-fluid {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 991px) {
+    .container-fluid {
+        height: auto !important;
+        padding: 30px;
+    }
+
+    .credit-card {
+        max-width: 500px!important;
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-bar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .user-sent-to,
+    .search-bar,
+    .user-section {
+        width: 100%;
+    }
+
+    .user-sent-to .user {
+        align-items: center;
+    }
+
+    .user-section {
+        justify-content: center !important;
+        padding: 20px;
+    }
+
+    .container-fluid {
+        height: auto !important;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .filter,
+    .location,
+    .price-filter {
+        display: none;
+    }
+
+    .container-fluid {
+        height: auto !important;
+        padding: 30px;
+    }
+
+    .checkout-container {
+        flex-direction: column-reverse;
+    }
+
+    .checkout-form {
+        flex-direction: column;
+    }
+
+    .checkout-form .inputs .form-inputs {
+        flex-direction: column;
+    }
+    .checkout-form .inputs .form-inputs input {
+        margin-right: 0;
+    }
+
+    .checkout-action-btns {
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 150px;
+    }
+
+
+}
